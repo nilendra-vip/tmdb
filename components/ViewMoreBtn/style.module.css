@@ -1,0 +1,12 @@
+.viewMoreBtnBox{
+    /* background-image: linear-gradient(to left, #09203f 0%, #537895 100%); */
+}
+.viewMoreBtn{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to right, rgba(30,213,169,1) 0%,rgba(1,180,228,1) 100%);
+    border-radius: 50%;
+    color: white;
+    
+}
+

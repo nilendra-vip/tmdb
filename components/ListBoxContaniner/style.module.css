@@ -1,0 +1,64 @@
+
+.showBox{
+    height: 85%;
+    overflow-x: scroll;
+    background-image: url(../../public/trendingMovieBoxBg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    /* background-color: tomato; */
+}
+.showBox::-webkit-scrollbar{
+    height: 0.5rem;
+    background-color:#d2d1d100;
+    scroll-behavior: smooth;
+}
+.showBox::-webkit-scrollbar-thumb{
+    background-color:#2a2a2a47;
+    border-radius: 20px;
+}
+.showItemBox{
+    flex-shrink: 0;
+    width: 250px;
+    height: 100%;
+    /* background-color: tomato; */
+    padding: 20px 5px;
+}
+.showImageBox{
+    width: 100%;
+    height: 75%;
+    /* background-color: springgreen; */
+    position: relative;
+}
+.showScoreRate{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    /* background-color: black; */
+    border: 3px solid springgreen;
+    
+}
+.showItemBox .showImage{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+}
+.showDets{
+    height: 25%;
+    /* background-color: royalblue; */
+}
+.showTitle{
+    font-family: var(--font-sans);
+    font-weight: var(--fw-700);
+}
+.showReleaseDate{
+    font-family: var(--font-sans);
+    font-weight: var(--fw-300);
+}
+
+

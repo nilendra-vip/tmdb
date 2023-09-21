@@ -1,0 +1,150 @@
+
+.itemBoxTop{
+    height: 10vh;
+    background-image: linear-gradient(to left, #09203f 0%, #537895 100%);
+}
+.itemBoxBottom{
+    min-height: 90vh;
+}
+.itemHomeDets{
+    height: 80vh;
+    background-image: linear-gradient(to left, #43434388 0%, black 100%);
+    position: relative;
+}
+.backdropPhotoOverlay{
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.homeDetsBox{
+    width: 85%;
+    height: 85%;
+}
+
+.homeDetsPhotoBox{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    border: none !important;
+}
+.homeDetsPhotoBox:hover img{
+    transform: scale(1.1);
+}
+.homeDetsPhotoBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    cursor: move;
+}
+.homeDetsInfo{
+    width: 75%;
+    height: 100%;
+    font-family: var(--san-font);
+}
+
+.homeDetsInfo h4{
+    font-weight: var(--fw-700);
+}
+.homeDetsInfo h5{
+    font-weight: var(--fw-400);
+    opacity: .9;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+
+.showTitle{
+    font-weight: var(--fw-900);
+}
+.scoreRateBox{
+    height: fit-content;
+}
+.scoreBox{
+    width: fit-content;
+}
+.scoreBox button{
+    background-color: rgba(255, 255, 255, 0.24);
+    color: white;
+}
+.userScore{
+    width: 4vmax;
+    height: 4vmax;
+}
+.userScore h1{
+    font-size: 1.2vmax;
+    max-width: 3ch;
+    overflow: hidden;
+    padding-left: 4px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+
+    .itemHomeDets{
+        height: 100%;
+    }
+
+    .homeDetsBox{
+        display: block !important;
+    }
+
+    .homeDetsPhotoBox{
+        width: 100%;
+        height: 50vh;
+        padding-bottom: 10px ;
+    }
+    .homeDetsPhotoBox img{
+        object-fit: contain;
+    }
+    .homeDetsInfo{
+        width: 100%;
+        padding: 5px 0 10px 0 !important;
+    }
+
+    .homeDetsInfo h5{
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    .releaseDate{
+        display: block !important;
+        padding-left: 0 !important;
+    }
+    .releaseDate .genresBox{
+        flex-direction: column !important;
+        gap: 0px !important;
+        
+    }
+    .releaseDate .genresBox span{
+        margin: 0 5px !important;
+    }
+
+    .scoreBox{
+        align-items: baseline !important;
+    }
+    .userScore{
+        width: 7vmax;
+        height: 7vmax;
+    }
+    .userScore h1{
+        font-size: 3vmax;
+        padding-top:7px !important;
+    }
+    .userScore h4{
+        padding-top: 40px;
+    }
+
+}
